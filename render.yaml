@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: paystack-webhook
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: PAYSTACK_SECRET
+        value: YOUR_SECRET_HERE
